@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relativelayout_bg_sgpa_cgpa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_sgpa_gold_blue_border" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6_semester3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Cumulative Grade Point Average"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#e22b34"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="(CGPA)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#e22b34"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_1111"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textColor="#095b4d"
+                        android:id="@+id/TextView2_sgpa_cgpa_semester"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Semester"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextView2_sgpa_cgpa_cg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Tot.(Cr.*Grd.)"
+                        android:textColor="#095b4d"
+                        android:textStyle="normal|bold"
+                      />
+
+                    <TextView
+                         android:textColor="#095b4d"
+                        android:id="@+id/TextView2_sgpa_cgpa_cg_o"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="CG "
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s12"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S1 and S2" />
+
+                    <TextView
+                        android:id="@+id/TextView2_sgpa_cgpa_cg1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="440"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S3" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_cg2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S4" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_cg3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S5" />
+
+                    <TextView
+                        android:id="@+id/TextView2_sgpa_cgpa_cg4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S6" />
+
+                    <TextView
+                        android:id="@+id/TextView2_sgpa_cgpa_cg5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s7"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S7" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_cg6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280" />
+
+                    <EditText
+                        android:id="@+id/EditText_sgpa_to_cgpa_s7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_sgpa_to_cgpa_s8"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextView2_sgpa_cgpa_s8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="S8" />
+
+                    <TextView
+                        android:id="@+id/TextView2_sgpa_cgpa_cg7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="280"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        
+                        android:id="@+id/EditText_sgpa_to_cgpa_s8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_sgpa_cgpa_cgpa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView_sgpa_cgpa_cgpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" CGPA="
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#e22b34"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_sgpa_cgpa_per__totmarks"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <TextView
+                    android:id="@+id/TextView_s3_percent_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PERCE.="
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#e22b34"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextView_s3_totmark_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TOT MARK="
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#e22b34"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="90" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_sgpa_cgpa_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="30"
+                     android:background="@drawable/toggle_button_submit"
+                    android:text="Submit"
+                    android:textColor="@android:color/background_light" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

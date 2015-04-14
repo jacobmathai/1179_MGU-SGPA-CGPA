@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s12.java" />
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s3.java" />
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s6.java" />
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s7.java" />
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s8.java" />
+        <ignore path="src/com/ebin/bino/vjcetbtech/SlideAnimationThenCallLayout.java" />
+        <ignore path="src/mg/sgpa/cgpa/Activity_fileexp_settings.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/ebin/bino/sgpa/cgpa/Sgpa_act_s12.java" />
+    </issue>
+</lint>

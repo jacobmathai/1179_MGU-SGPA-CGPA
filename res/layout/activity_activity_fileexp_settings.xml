@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relateive_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity_fileexp_settings"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/set_linearlayout_background_main_clour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView2_inflate_sgpa_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:text="Background colour"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                     android:layout_weight=".2" >
+
+                <ImageView
+                  android:scaleType="fitXY"
+                    android:id="@+id/set_bag_colour_imageButton1"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/g_gold_lite" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/set_linearlayout_text_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView2_inflate_sgpa_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:text="Text Colour"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <FrameLayout
+                android:id="@+id/FrameLayout02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2" >
+
+                <ImageView
+                    android:id="@+id/ImageView_text_colour"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gg_blke" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
